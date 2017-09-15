@@ -1,0 +1,22 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+  function removeOne() {
+    var x = prompt("Remove one");
+    var stupidKid = document.getElementsByTagName('li')[x];
+//Select the containing Element. The parentNode is the <ul>
+    var hana = stupidKid.parentNode;
+//Remove the element
+    hana.removeChild(stupidKid);
+}
+    </script>
+<input type="text">
+<button onclick="removeOne()">Remove</button>
+  <ul>
+    <li>Justin</li>
+    <li>Brian Dang</li>
+    <li>Brandon Au</li>
+  </ul>
+  </body>
+</html>
