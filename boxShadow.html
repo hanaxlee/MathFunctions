@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<style>
+		
+		</style>
+		<script>
+		function tangledOn() {
+			document.getElementById('tangled').style.boxShadow = "0px 10px 1px #888888";
+			document.getElementById('tangled').style.visibility = "visible";
+		}
+				function tangledOff() {
+			document.getElementById('tangled').style.boxShadow = "0px 0px 0px white";
+		}
+		function dogOn() {
+			document.getElementById('dog').style.boxShadow = "0px 10px 1px #888888";
+      document.getElementById('dog').style.visibility = "visible";
+		}
+				function dogOff() {
+			document.getElementById('dog').style.boxShadow = "0px 0px 0px white";
+				}
+		</script>
+	</head>
+	<body>
+		<img src="http://1.media.dorkly.cvcdn.com/94/75/f9f7c1c923482573f20e68247ecc8d7a.jpg" width="40%" id="tangled" onmouseover="tangledOn()" onmouseout="tangledOff()">
+		<img src="http://1920x1080hdwallpapers.com/image/201503/animals/959/dog-flower-yellow.jpg" width="40%" id="dog" onmouseover="dogOn()" onmouseout="dogOff()">
+	</body>
+</html>
